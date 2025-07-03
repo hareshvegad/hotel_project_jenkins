@@ -50,8 +50,7 @@ def test_update_order(api_client):
     })
     assert response.status_code == 200
     assert response.data["item_name"] == "Fried Rice"
-    assert response.data["status"] == "ready"
-    
+    assert response.data["status"] == "ready"    
 
 @pytest.mark.django_db
 def test_delete_order(api_client):
