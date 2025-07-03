@@ -16,7 +16,7 @@ def test_create_order_success(api_client):
 @pytest.mark.django_db
 def test_create_order_invalid_user(api_client):
     response = api_client.post("/api/orders/", {
-        "user": "00000000-0000-0000-0000-000000000000",  # invalid UUID
+        "user": "00000000-0000-0000-0000-000000000000", 
         "item_name": "Burger",
         "quantity": 1,
         "status": "cooked"
