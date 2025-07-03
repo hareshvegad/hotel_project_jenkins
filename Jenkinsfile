@@ -1,6 +1,8 @@
 pipeline {
     agent any
 
+    triggers { githubPush() }        
+    
     environment {
         DJANGO_SETTINGS_MODULE = "hotel_project.test_settings"
         VENV_DIR = ".venv"
