@@ -6,9 +6,9 @@
 version: 2
 updates:
   - package-ecosystem: "pip"
-    directory: "/"  # Root of the repo
+    directory: "/"                # Location of requirements.txt
     schedule:
-      interval: "weekly"  # Options: daily, weekly, monthly
+      interval: "weekly"          # Options: daily, weekly, monthly
     open-pull-requests-limit: 5
     allow:
-      - dependency-type: "direct"  # or "all"
+      - dependency-type: "all"    # Options: "direct", "indirect", "all"
