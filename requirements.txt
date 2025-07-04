@@ -7,7 +7,7 @@ colorama==0.4.6
 constantly==23.10.4
 coverage==7.9.1
 cryptography==45.0.4
-daphne==4.2.0
+daphne==4.2.1
 Django==5.2.3
 djangorestframework==3.16.0
 hyperlink==21.0.0
